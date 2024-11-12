@@ -1,6 +1,7 @@
 package com.tutorial.SpringTutorial;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 // @Component annotation is used to flag a class to be part of the ApplicationContext.
@@ -25,11 +26,14 @@ public class Dev {
 //  This is known as Field Injection.
 
     @Autowired
+// Suppose you dont want to explicitly specify primary to a class.
+// You can use Qualifier inside the method.
+// This can be harnessed when 1 place your qualifier is Laptop and another place your qualifier is desktop.
+    @Qualifier("laptop")
     private Computer computer;
 
     private Computer computer_constructor, computer_setter;
 
-// Spring sees the
 // If you dont want to use Autowired annotation, then you can use the following method to access object from IoC container.
 // In backend spring will pass the required class in the constructor call.
 // This is known as constructor injection
