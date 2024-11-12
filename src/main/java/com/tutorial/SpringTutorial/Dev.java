@@ -44,7 +44,7 @@ public class Dev {
     }
 
 //  Now instead of using Laptop class, we use Computer Interface.
-//  Spring will automatically be able to wire Laptop via Computer in the Dev class.
+//  Spring will automatically be able to wire Laptop via Computer in the Dev class.Laptop
 
     public void build(){
         computer.compile("Field Injection");
