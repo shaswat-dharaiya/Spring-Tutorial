@@ -7,4 +7,8 @@
 
     </bean>
 
+    <bean class ="org.springproject.Laptop" id="laptop">
+
+    </bean>
+
 </beans>
