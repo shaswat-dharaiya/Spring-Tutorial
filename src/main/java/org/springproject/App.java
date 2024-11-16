@@ -18,7 +18,7 @@ public class App
 //        obj.build();
 
 //        With spring
-        ApplicationContext context = new ClassPathXmlApplicationContext();
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Dev obj = context.getBean(Dev.class);
         obj.build();
     }
