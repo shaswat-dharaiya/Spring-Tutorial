@@ -19,7 +19,7 @@ public class App
 
 //        With spring
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Dev obj = context.getBean(Dev.class);
+        Dev obj = (Dev) context.getBean(Dev.class);
         obj.build();
     }
 
