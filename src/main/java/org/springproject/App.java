@@ -21,8 +21,9 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Dev obj = (Dev) context.getBean(Dev.class);
 //        obj.build();
-        System.out.println(obj.age);
+
         System.out.println(obj.getAge());
+        System.out.println(obj.getSalary());
     }
 
 }
