@@ -6,12 +6,18 @@ public class Dev {
     int age =8;
     int salary =8;
 
-    private Laptop laptop;
+    private Computer computer;
 //    private int age;
 
-    public Dev(Laptop laptop)
+    public Dev()
     {
-        this.laptop = laptop;
+        System.out.println("Dev default constructor");
+//        System.out.println(age);
+    }
+
+    public Dev(Computer computer)
+    {
+        this.computer = computer;
         System.out.println("Dev constructor");
 //        System.out.println(age);
     }
@@ -27,12 +33,12 @@ public class Dev {
         return salary;
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getComputer() {
+        return computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 
     public void setSalary(int salary) {
@@ -48,6 +54,8 @@ public class Dev {
     }
 
     public void build(){
+
         System.out.println("Working on awesome project");
+        computer.compile();
     }
 }
