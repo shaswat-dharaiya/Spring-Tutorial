@@ -5,8 +5,11 @@
 
     <bean class ="org.springproject.Dev" id="dev">
 <!--        <property name="age" value="12" />-->
-        <constructor-arg index="0" value="14"></constructor-arg>
-        <constructor-arg index="1" value="1400"></constructor-arg>
+<!--        <constructor-arg index="0" value="14"></constructor-arg>-->
+Z<!--        <constructor-arg index="1" value="1400"></constructor-arg>-->
+        <property name="laptop" ref = "laptop" />
+        <constructor-arg ref = "laptop">
+
 
     </bean>
 

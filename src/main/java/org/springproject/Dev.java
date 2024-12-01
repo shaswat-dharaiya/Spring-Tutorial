@@ -5,12 +5,15 @@ public class Dev {
 //    Setter Injection
     int age =8;
     int salary =8;
+
+    private Laptop laptop;
 //    private int age;
 
-    public Dev()
+    public Dev(Laptop laptop)
     {
+        this.laptop = laptop;
         System.out.println("Dev constructor");
-        System.out.println(age);
+//        System.out.println(age);
     }
 
     public Dev(int age, int salary)
@@ -22,6 +25,14 @@ public class Dev {
 
     public int getSalary() {
         return salary;
+    }
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
     }
 
     public void setSalary(int salary) {
