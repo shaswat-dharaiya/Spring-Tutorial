@@ -2,6 +2,8 @@ package com.tutorial.SpringTutorial.model;
 
 //import lombok.AllArgsConstructor;
 //import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
 // This is model package
@@ -9,7 +11,10 @@ import org.springframework.stereotype.Component;
 //@Data
 //@AllArgsConstructor
 @Component
+@Entity
 public class Product {
+
+    @Id
     private int prodId;
     private String prodName;
     private int price;
